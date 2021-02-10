@@ -1,0 +1,27 @@
+{
+  "name": "PuppeteerLearn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha tests",
+    "jest-snapshots": "npx jest --config=test-snapshots/jest.config.js --detectOpenHandles --forceExit",
+    "jest-snapshots-update": "npx jest --config=test-snapshots/jest.config.js --detectOpenHandles --updateSnapshot --forceExit",
+    "test:percy": "npx percy exec -- jest --config=test-snapshots/jest.config.js --detectOpenHandles -i /test-snapshots/__tests__/test3.percy.spec.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  },
+  "dependencies": {
+    "@percy/puppeteer": "^1.1.0",
+    "chai": "^4.2.0",
+    "jest": "^26.6.3",
+    "jest-image-snapshot": "^4.2.0",
+    "mocha": "^8.2.1",
+    "prettier": "^2.2.1",
+    "puppeteer": "^5.5.0"
+  }
+}
