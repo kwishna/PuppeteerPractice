@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="4" failures="1" errors="0" time="28.926">
+  <testsuite name="Puppeteer Test" errors="0" failures="1" skipped="0" timestamp="2021-05-24T20:27:09" time="13.464" tests="1">
+    <testcase classname="Puppeteer Test Test One" name="Puppeteer Test Test One" time="11.874">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: &quot;string&quot;
+Received: &quot;Krishna Kumar Singh - Google Search&quot;
+    at Object.&lt;anonymous&gt; (F:\ABD\GitHub\PuppeteerCodes\src\test1.spec.ts:39:30)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Puppeteer Test" errors="0" failures="0" skipped="0" timestamp="2021-05-24T20:27:09" time="27.688" tests="3">
+    <testcase classname="Puppeteer Test Testing In Desktop" name="Puppeteer Test Testing In Desktop" time="12.645">
+    </testcase>
+    <testcase classname="Puppeteer Test Testing In iPad" name="Puppeteer Test Testing In iPad" time="7.113">
+    </testcase>
+    <testcase classname="Puppeteer Test Testing In iPad" name="Puppeteer Test Testing In iPad" time="6.36">
+    </testcase>
+  </testsuite>
+</testsuites>

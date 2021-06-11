@@ -1,6 +1,6 @@
 const puppeteer = require('puppeteer');
-const url = 'http://qaautomationworld.blogspot.com/2014/11/appium-remote-execution-grid-execution.html'
-const outputfile='appium-selenium-grid-docs.pdf';
+const url = 'https://www.vogella.com/tutorials/Groovy/article.html'
+const outputfile='vogella-groovy.pdf';
 
 (async function() {
   try {
@@ -16,9 +16,11 @@ const outputfile='appium-selenium-grid-docs.pdf';
     await page.setDefaultTimeout(10000);
     
     await page.goto(url, { 'waitUntil' : 'domcontentloaded' });
+	await page.click('button.cc_b_ok')
     await page.pdf({path: outputfile, displayHeaderFooter:true, printBackground: true, footerTemplate: 'pageNumber', format: 'A4'});
     // await page.screenshot({path: 'device_testng.png', fullPage: false});
     await browser.close();
+	console.log("Completed!!!")
   }
   catch(err) {
     console.log("Failed to convert URL to PDF ("+err.name+" - "+err.message+")");
